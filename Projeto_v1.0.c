@@ -5,6 +5,7 @@
 // ################################
 // Assinatura das Funções
 void tela_principal(void);
+void tela_cliente(void);
 void tela_sobre(void);
 void tela_equipe(void);
 
@@ -12,6 +13,7 @@ void tela_equipe(void);
 // Programa principal
 int main(void) {
     tela_principal();
+    tela_cliente();
     tela_sobre();
     tela_equipe();
     return 0;
@@ -36,6 +38,23 @@ void tela_principal(void) {
     printf("| 4. Módulo Venda                                                             |\n");
     printf("| 5. Módulo Relatórios                                                        |\n");
     printf("| 0. Sair                                                                     |\n");
+    printf("└─────────────────────────────────────────────────────────────────────────────┘\n");
+    printf("\n");
+}
+
+void tela_cliente(void) {
+    printf("\n");
+    printf("┌─────────────────────────────────────────────────────────────────────────────┐\n");
+    printf("|                                 BuyYourCar                                  |\n");
+    printf("└─────────────────────────────────────────────────────────────────────────────┘\n");
+    printf("┌─────────────────────────────────────────────────────────────────────────────┐\n");
+    printf("|                                Menu Cliente                                 |\n");
+    printf("|                                                                             |\n");
+    printf("| 1. Cadastrar um Novo Cliente                                                |\n");
+    printf("| 2. Procurar um Cliente                                                      |\n");
+    printf("| 3. Alterar Dados do Cliente                                                 |\n");
+    printf("| 4. Excluir Cliente                                                          |\n");
+    printf("| 0. Voltar ao Menu                                                           |\n");
     printf("└─────────────────────────────────────────────────────────────────────────────┘\n");
     printf("\n");
 }
